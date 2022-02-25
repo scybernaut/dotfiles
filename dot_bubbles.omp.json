@@ -18,10 +18,12 @@
           "type": "path"
         },
         {
-          "foreground": "#3EC669",
+          "foreground": "#47E679",
           "properties": {
+            "fetch_status": true,
+            "fetch_stash_count": true,
             "branch_icon": "",
-            "template": " {{ .HEAD }}"
+            "template": " {{ .HEAD }}{{ .BranchStatus }}{{ if or (.Working.Changed) (.Staging.Changed) }} {{ end }}{{ if .Working.Changed }} \uF044 {{ .Working.String }}{{ end }}{{ if and (.Staging.Changed) (.Working.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uF046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0}}  \uF692 {{ .StashCount }}{{ end }}"
           },
           "style": "plain",
           "type": "git"
