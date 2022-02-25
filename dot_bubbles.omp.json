@@ -133,7 +133,7 @@
           "foreground": "#FF79C6",
 	  "leading_diamond": "\ue0b6",
           "properties": {
-            "template": "{{ if .SSHSession }}\uF817{{ end }} {{ .UserName }}@{{ .HostName }}"
+            "template": "{{ if .SSHSession }}\uF817 {{ end }}{{ .UserName }}@{{ .HostName }}"
           },
           "style": "diamond",
 	  "trailing_diamond": "\ue0b4",
