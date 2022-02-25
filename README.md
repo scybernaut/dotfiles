@@ -23,15 +23,11 @@ My personal dotfiles repository, managed by [chezmoi](https://github.com/twpayne
     ```shell
     $ chezmoi apply
     ```
-5. Install [antigen](https://github.com/zsh-users/antigen) and [vim-plug](https://github.com/junegunn/vim-plug) plugin managers
+
+5. Install [vim-plug](https://github.com/junegunn/vim-plug) plugin manager
     ```shell
-    $ curl -fLo ~/.antigen.zsh git.io/antigen
     $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
         https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-    ```
-    **Note**: If you have installed antigen using the official command, you might need to symlink, copy, or move your `antigen.zsh` to `~/.antigen.zsh`. Skip this step if you installed antigen using the command above.
-    ```shell
-    $ ln -s /path/to/antigen.zsh ~/.antigen.zsh
     ```
 
 6. Install vim plugins
@@ -39,7 +35,7 @@ My personal dotfiles repository, managed by [chezmoi](https://github.com/twpayne
     $ vim +PlugInstall +qall
     ```
 
-7. Start a new zsh shell (plugins will be installed automatically by antigen)
+7. Start a new zsh shell
     ```shell
     $ zsh
     ```

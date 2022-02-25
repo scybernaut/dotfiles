@@ -1,6 +1,8 @@
-set ts=4
-set sts=4
-set sw=4
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+
+set expandtab
 
 set mouse=a
 
@@ -10,20 +12,11 @@ set mouse=a
 " :PlugInstall in vim to install plugins
 call plug#begin('~/.vim/plugged')
 
-Plug 'vim-python/python-syntax'
-" Plug 'joshdick/onedark.vim'
 Plug 'dracula/vim', { 'as': 'dracula' }
 
 call plug#end()
 
-" let g:eighties_italicize_strings = 0
-" let g:eighties_transp_bg = 0
-
-" set background=dark
 syntax on
 colorscheme dracula
 
-" highlight Normal ctermbg=DarkBlue
-
 hi Normal guibg=NONE ctermbg=NONE
-" let g:lightline = { 'colorscheme': 'plastic' }
