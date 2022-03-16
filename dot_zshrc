@@ -102,18 +102,31 @@ eval "$(oh-my-posh --init --shell zsh --config ~/.bubbles.omp.json)"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if command -v lsd &> /dev/null
-then
-    alias ls=lsd
-else
-    unalias ls
-fi
+_alias_exa() {
+    if command -v exa &> /dev/null
+    then
+        alias ls="exa --icons $EXA_FLAG"
+    else
+        unalias ls
+    fi
+}
+_alias_exa
+
+ascii() {
+    if [[ -v EXA_FLAG ]]
+    then
+        unset EXA_FLAG
+        echo "enabling icons in exa"
+    else
+        EXA_FLAG='--no-icons'
+        echo "disabling icons in exa"
+    fi
+    _alias_exa
+}
 
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
-alias llh='ls -lh'
-alias lh=llh
 alias l='ls -l'
 
 alias dip='dig +short myip.opendns.com @resolver1.opendns.com'
