@@ -74,7 +74,7 @@ plugins=(git colored-man-pages safe-paste systemd firewalld zsh-syntax-highlight
 
 source $ZSH/oh-my-zsh.sh
 
-[[ -o login ]] || ~/.colorscripts/bars
+$(find ~/.colorscripts -type f 2> /dev/null | shuf -n 1)
 
 eval "$(oh-my-posh --init --shell zsh --config ~/.bubbles.omp.json)"
 
