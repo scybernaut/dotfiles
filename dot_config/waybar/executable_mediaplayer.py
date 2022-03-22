@@ -41,8 +41,14 @@ def on_metadata(player, metadata, manager):
     else:
         track_info = player.get_title()
 
+    if max_length > 0:
+        truncated = max_length < len(track_info)
+        track_info = track_info[:max_length]
+        track_info += '…' if truncated else ''
+
     if player.props.status != 'Playing' and track_info:
-        track_info = ' ' + track_info
+        track_info += ' '
+
     write_output(track_info, player)
 
 
@@ -85,11 +91,17 @@ def parse_arguments():
     # Define for which player we're listening
     parser.add_argument('--player')
 
+    # Maximum text length (without pause icon)
+    parser.add_argument('-l', '--length', type=int, default=0)
+
     return parser.parse_args()
 
 
 def main():
     arguments = parse_arguments()
+
+    global max_length
+    max_length = arguments.length
 
     # Initialize logging
     logging.basicConfig(stream=sys.stderr, level=logging.DEBUG,
