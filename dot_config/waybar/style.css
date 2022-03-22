@@ -77,6 +77,10 @@ box.horizontal {
     border-radius: 9999px;
 }
 
+#custom-launcher {
+    color: #bd93f9;
+}
+
 #clock,
 #battery,
 #cpu,
@@ -92,7 +96,8 @@ box.horizontal {
 #idle_inhibitor,
 #mpd,
 #language,
-#custom-spotify{
+#custom-launcher,
+#custom-spotify {
     padding: 0 10px;
     border-radius: 9999px;
 }
