@@ -51,11 +51,13 @@ box.horizontal {
 }
 
 #workspaces button:first-child {
-    border-radius: 9999px 0 0 9999px;
+    border-top-left-radius: 9999px;
+    border-bottom-left-radius: 9999px;
 }
 
 #workspaces button:last-child {
-    border-radius: 0 9999px 9999px 0;
+    border-top-right-radius: 9999px;
+    border-bottom-right-radius: 9999px;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
