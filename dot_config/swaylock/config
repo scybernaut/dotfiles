@@ -1,0 +1,47 @@
+image=~/.local/share/backgrounds/sway/background-blurred.png
+
+show-keyboard-layout
+ignore-empty-password
+show-failed-attempts
+
+# Dracula Color Palette
+
+# | Palette      | Hex       | RGB           | HSL             |
+# | ------------ | --------- | ------------- | --------------- |
+# | Background   | `#282a36` | `40 42 54`    | `231° 15% 18%`  |
+# | Current Line | `#44475a` | `68 71 90`    | `232° 14% 31%`  |
+# | Selection    | `#44475a` | `68 71 90`    | `232° 14% 31%`  |
+# | Foreground   | `#f8f8f2` | `248 248 242` | `60° 30% 96%`   |
+# | Comment      | `#6272a4` | `98 114 164`  | `225° 27% 51%`  |
+# | Cyan         | `#8be9fd` | `139 233 253` | `191° 97% 77%`  |
+# | Green        | `#50fa7b` | `80 250 123`  | `135° 94% 65%`  |
+# | Orange       | `#ffb86c` | `255 184 108` | `31° 100% 71%`  |
+# | Pink         | `#ff79c6` | `255 121 198` | `326° 100% 74%` |
+# | Purple       | `#bd93f9` | `189 147 249` | `265° 89% 78%`  |
+# | Red          | `#ff5555` | `255 85 85`   | `0° 100% 67%`   |
+# | Yellow       | `#f1fa8c` | `241 250 140` | `65° 92% 76%`   |
+
+bs-hl-color=#ff5555
+key-hl-color=#8be9fd
+
+inside-color=#282a36
+inside-clear-color=#282a36
+inside-ver-color=#282a36
+inside-wrong-color=#282a36
+
+layout-bg-color=#282a36
+
+line-uses-ring
+
+ring-color=#44475a
+ring-clear-color=#ffb86c
+ring-ver-color=#8be9fd
+ring-wrong-color=#ff5555
+
+separator-color=#00000000
+
+text-color=#f8f8f2
+text-clear-color=#ffb86c
+text-ver-color=#8be9fd
+text-wrong-color=#ff5555
+
