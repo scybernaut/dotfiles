@@ -76,7 +76,7 @@ source $ZSH/oh-my-zsh.sh
 
 $(find ~/.colorscripts -type f 2> /dev/null | shuf -n 1)
 
-eval "$(oh-my-posh --init --shell zsh --config ~/.bubbles.omp.json)"
+eval "$(starship init zsh)"
 
 # User configuration
 
