@@ -140,6 +140,8 @@ alias duh='du -h'
 
 alias incognito='unset HISTFILE'
 
+alias cz=chezmoi
+
 
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
 

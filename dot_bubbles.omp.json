@@ -6,8 +6,8 @@
       "newline": true,
       "segments": [
         {
-          "background": "#29315A",
-          "foreground": "#43CCEA",
+          "background": "#241F31",
+          "foreground": "#62A0EA",
           "leading_diamond": "\ue0b6",
           "properties": {
             "style": "full",
@@ -18,7 +18,7 @@
           "type": "path"
         },
         {
-          "foreground": "#47E679",
+          "foreground": "#33D17A",
           "properties": {
             "fetch_status": true,
             "fetch_stash_count": true,
@@ -35,19 +35,19 @@
       "alignment": "right",
       "segments": [
         {
-          "background": "#29315A",
-          "foreground": "#E0484F",
+          "background": "#241F31",
+          "foreground": "#F66151",
           "leading_diamond": "\ue0b6",
           "properties": {
-            "template": "{{ if gt .Code 0 }}\uf00d {{ .Meaning }}{{ end }}"
+            "template": "{{ if gt .Code 0 }}\uf00d {{ if eq .Meaning (toString .Code) -}} {{.Code}} {{- else -}} {{.Meaning}} ({{.Code}}) {{- end }}{{ end }}"
           },
           "trailing_diamond": "\ue0b4 ",
           "style": "diamond",
           "type": "exit"
         },
         {
-          "background": "#29315A",
-          "foreground": "#AEA4BF",
+          "background": "#241F31",
+          "foreground": "#9A9996",
           "leading_diamond": "\ue0b6",
           "properties": {
             "style": "austin",
@@ -59,8 +59,8 @@
           "type": "executiontime"
         },
         {
-          "background": "#29315A",
-          "foreground": "#E4F34A",
+          "background": "#241F31",
+          "foreground": "#F6D32D",
           "leading_diamond": " \ue0b6",
           "properties": {
             "fetch_version": false,
@@ -71,8 +71,8 @@
           "type": "python"
         },
         {
-          "background": "#29315A",
-          "foreground": "#7FD5EA",
+          "background": "#241F31",
+          "foreground": "#62A0EA",
           "leading_diamond": " \ue0b6",
           "properties": {
             "fetch_version": false,
@@ -83,8 +83,8 @@
           "type": "go"
         },
         {
-          "background": "#29315A",
-          "foreground": "#42E66C",
+          "background": "#241F31",
+          "foreground": "#2EC27E",
           "leading_diamond": " \ue0b6",
           "properties": {
             "fetch_version": false,
@@ -95,8 +95,8 @@
           "type": "node"
         },
         {
-          "background": "#29315A",
-          "foreground": "#E64747",
+          "background": "#241F31",
+          "foreground": "#E01B24",
           "leading_diamond": " \ue0b6",
           "properties": {
             "fetch_version": false,
@@ -107,8 +107,8 @@
           "type": "ruby"
         },
         {
-          "background": "#29315A",
-          "foreground": "#E64747",
+          "background": "#241F31",
+          "foreground": "#FF7800",
           "leading_diamond": " \ue0b6",
           "properties": {
             "fetch_version": false,
@@ -119,8 +119,8 @@
           "type": "java"
         },
         {
-          "background": "#29315A",
-          "foreground": "#9B6BDF",
+          "background": "#241F31",
+          "foreground": "#C061CB",
           "leading_diamond": " \ue0b6",
           "properties": {
             "fetch_version": false,
@@ -131,9 +131,9 @@
           "type": "julia"
         },
         {
-	  "background": "#29315A",
-          "foreground": "#FF79C6",
-	  "leading_diamond": "\ue0b6",
+          "background": "#241F31",
+          "foreground": "#DC8ADD",
+          "leading_diamond": "\ue0b6",
           "properties": {
             "template": "{{ if .SSHSession }}\uF817 {{ end }}{{ .UserName }}@{{ .HostName }}"
           },
@@ -142,7 +142,7 @@
           "type": "session"
         },
         {
-          "background": "#29315A",
+          "background": "#241F31",
           "foreground": "#9B6BDF",
           "foreground_templates": [
             "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
@@ -168,9 +168,9 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#7FD5EA",
+          "foreground": "#F9F06B",
           "properties": {
-            "template": "🤙"
+            "template": "✌️ "
           },
           "style": "plain",
           "type": "text"
