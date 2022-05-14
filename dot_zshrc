@@ -105,12 +105,8 @@ eval "$(starship init zsh)"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 _alias_exa() {
-    if command -v exa &> /dev/null
-    then
-        alias ls="exa --icons $EXA_FLAG"
-    else
-        unalias ls
-    fi
+    alias ls="exa --icons $EXA_FLAG"
+    alias tree="exa --tree --icons $EXA_FLAG"
 }
 _alias_exa
 
@@ -126,24 +122,25 @@ ascii() {
     _alias_exa
 }
 
+alias cat=bat
+alias grep=ripgrep
+
+alias vim=nvim
+
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -la'
 alias l='ls -l'
-
-alias dip='dig +short myip.opendns.com @resolver1.opendns.com'
-
-alias v=vim
-alias vd=vimdiff
-
 alias duh='du -h'
+alias cz=chezmoi
+alias dip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias incognito='unset HISTFILE'
 
-alias cz=chezmoi
-
+# EXPORTS
 
 export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
+export BAT_THEME="Catppuccin"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
 ZSH_COLORIZE_TOOL=chroma
