@@ -137,10 +137,6 @@ alias dip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 alias incognito='unset HISTFILE'
 
-# EXPORTS
-
-export SSH_AUTH_SOCK="${XDG_RUNTIME_DIR}/ssh-agent.socket"
-export BAT_THEME="Catppuccin"
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=243"
 ZSH_COLORIZE_TOOL=chroma
